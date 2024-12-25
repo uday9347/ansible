@@ -1,5 +1,11 @@
 - name: playbook 
   hosts: web
   tasks:
-  - name : ping the server 
-    ansible.builtin.ping :
+  - name: install nginx
+    ansible.builtin.package:
+      name: nginx
+      state: present 
+  - name: run nginx
+    ansible.bultin.service:
+      name: nginx
+      state: started 
