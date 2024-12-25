@@ -1,0 +1,16 @@
+- name: uday teja
+  dob: 12-05-2002
+  address:
+    address1: ganesh nagar
+    address2: chintal
+    address : hyderabad
+  lastname: akaramsetty
+  email: uday@gmail.com
+
+-name: ramesh
+  age: 21
+  address: 
+    -addressline1: ganesh nagar 
+      adress2 : chintal
+    -addressline2: quthbullapur
+      address2: hyderabad
