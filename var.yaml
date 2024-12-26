@@ -6,5 +6,8 @@
     year: "2023"
   tasks:
   - name: printing the message
+    vars:
+      name: "ranga"
+      year: "2024"
     ansible.builtin.debug:
       msg: "my name is {{name}} and i  graduated in the year of {{year}}" 
