@@ -1,8 +1,7 @@
 ---
 - name: multi variables 
   hosts: localhost
-  vars_files:
-  - varfromfiles.yaml
+  vars_files: varfromfiles.yaml
   tasks:
   - name: printing the message
     # vars:
