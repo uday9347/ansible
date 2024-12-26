@@ -1,4 +1,5 @@
 ---
+
 - name: taking the prompt from user 
   hosts: localhost 
   vars_prompt: 
