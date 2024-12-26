@@ -1,0 +1,9 @@
+- name: conditions amam
+  hosts: localhost 
+  tasks:
+  - name: checking the roboshop user 
+    ansible.builtin.command: id roboshop
+    register: robo
+  - name: print the msg
+    ansible.builtin.debug:
+      msg: "the output is {{robo}}"
