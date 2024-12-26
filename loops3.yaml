@@ -6,6 +6,7 @@
   - name: loppoing the names
     ansible.builtin.debug:
       msg: "this is {{item}}"
+    when: "{{item}"} != uday
     loop:
     - uday
     - raju
