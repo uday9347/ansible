@@ -1,0 +1,17 @@
+- name: taking the loops 
+  hosts: localhost 
+  # vars:
+  # vars_files:
+  # vars_prompt:
+  # - name: 
+  #   prompt: 
+  #   private 
+  tasks:
+  - name: looping the statements 
+    ansible.builtin.debug: 
+      msg: "this is {{item}}"
+    loop:
+    - uday
+    - tanikala
+    - rajesh
+
