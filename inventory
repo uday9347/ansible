@@ -1,12 +1,6 @@
 172.123.11
 172.123.111
 
-[localhost]
-localhost
-
-[localhost:vars]
-NAME="UDAYA TEJA"
-YEAR="2023"
 
 [web]
 54.174.105.151
