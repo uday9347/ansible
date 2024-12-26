@@ -8,11 +8,10 @@
   #   private 
   tasks:
   - name: looping the statements 
-    ansible.builtin.debug: 
-      msg: "this is {{item}}"
-    when: item != rajesh
+    ansible.builtin.package: 
+      name: {{item}}
+      state: present
     loop:
-    - uday
-    - tanikala
-    - rajesh
-
+    - nginx
+    - mysql
+    
