@@ -1,0 +1,10 @@
+---
+- name: multi variables 
+  hosts: localhost
+  vars: 
+    name: "uday"
+    year: "2023"
+  tasks:
+  - name: printing the message
+    ansible.builtin.debug:
+      msg: "my name is {{name}} and i  graduated in the year of {{year}}" 
