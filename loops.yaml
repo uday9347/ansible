@@ -10,6 +10,7 @@
   - name: looping the statements 
     ansible.builtin.debug: 
       msg: "this is {{item}}"
+    when: item != rajesh
     loop:
     - uday
     - tanikala
