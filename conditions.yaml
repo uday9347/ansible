@@ -7,4 +7,4 @@
     ignore_errors: true
   - name: print the msg
     ansible.builtin.debug:
-      msg: "the output is {{robo}}"
+      msg: "the output is {{robo.rc}}"
