@@ -1,6 +1,6 @@
 - name: taking the loops 
   hosts: localhost 
-  became: yes 
+  become: yes 
   # vars:
   # vars_files:
   # vars_prompt:
@@ -15,4 +15,5 @@
     loop:
     - nginx
     - mysql
+    - git 
     
