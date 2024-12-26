@@ -4,7 +4,7 @@
   # vars:
   # vars_files:
   # vars_prompt:
-  tasks :
+  tasks:
   - name: taking the variables 
     ansible.builtin.debug:
       msg: "my name is {{NAME}} and i graduated in the year of {{YEAR}}"
