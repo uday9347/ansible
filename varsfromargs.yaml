@@ -1,0 +1,6 @@
+- name: taking the variables from cmd 
+  hosts: localhost 
+  tasks :
+  - name: print the message 
+    ansible.builtin.debug:
+      msg: "the name is {{PERSON}} and the graduated year is {{WHAT}}"
