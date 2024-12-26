@@ -1,0 +1,19 @@
+---
+
+- name: the resume 
+  hosts: localhost 
+  vars:
+    name: uday teja 
+    skills:
+    - python
+    - django
+    - java
+    experience:
+      - python: 1
+      - java: 2
+      - django: 3
+    professional: true
+  tasks:
+  - name: print the resume
+    ansible.builtin.debug:
+     msg: "this is {{name}} and iam skilled with {{skills}} with having experience on {{experience}} and a {{professional}} professional"
